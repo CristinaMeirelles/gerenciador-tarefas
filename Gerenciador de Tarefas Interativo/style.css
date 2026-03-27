@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+  padding: 30px 15px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin-bottom: 8px;
+  font-size: 32px;
+}
+
+header p {
+  color: #6b7280;
+}
+
+.painel-formulario,
+.painel-filtros {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.painel-formulario h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.form-grid,
+.painel-filtros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+input,
+select,
+button {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.92;
+}
+
+.painel-resumo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card-resumo {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.card-resumo span {
+  display: block;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.card-resumo strong {
+  font-size: 28px;
+}
+
+.lista-tarefas {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+}
+
+.tarefa {
+  background: #ffffff;
+  border-left: 6px solid #9ca3af;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.tarefa.alta {
+  border-left-color: #dc2626;
+}
+
+.tarefa.media {
+  border-left-color: #f59e0b;
+}
+
+.tarefa.baixa {
+  border-left-color: #16a34a;
+}
+
+.tarefa.concluida {
+  opacity: 0.75;
+}
+
+.tarefa.concluida .titulo-tarefa {
+  text-decoration: line-through;
+}
+
+.topo-tarefa {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.titulo-tarefa {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info-tarefa {
+  margin-top: 10px;
+  color: #4b5563;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  background: #eef2ff;
+}
+
+.acoes {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-secundario {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.btn-danger {
+  background: #dc2626;
+}
+
+.mensagem-vazia {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 20px;
+}
